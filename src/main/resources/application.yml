@@ -4,7 +4,5 @@ server:
 spring:
   data:
     mongodb:
-      username: ${DB_USER:root}
-      password: ${DB_PWD:root}
+      uri: ${MONGODB_URI:mongodb://root:root@localhost:27017/}
       database: ${DB_NAME:MobBuilder}
-      uri: ${MONGODB_URI:mongodb://localhost:27017/}

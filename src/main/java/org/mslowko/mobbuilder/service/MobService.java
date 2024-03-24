@@ -3,6 +3,8 @@ package org.mslowko.mobbuilder.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.mslowko.mobbuilder.dto.MobDTO;
+import org.mslowko.mobbuilder.dto.Status;
+import org.mslowko.mobbuilder.dto.response.StatusResponse;
 import org.mslowko.mobbuilder.model.Mob;
 import org.mslowko.mobbuilder.model.MobRepository;
 import org.mslowko.mobbuilder.model.Tier;
@@ -18,6 +20,16 @@ import java.util.Random;
 public class MobService {
     private final MobRepository repository;
     private final Random random = new Random();
+
+    public StatusResponse getRepositoryStatus() {
+        List<Boolean> tiers = List.of(
+                repository.existsByTier(Tier.B),
+                repository.existsByTier(Tier.A),
+                repository.existsByTier(Tier.S)
+        );
+        Status status = tiers.contains(false) ? Status.UNAVAILABLE : Status.READY;
+        return new StatusResponse(status, tiers.get(0), tiers.get(1), tiers.get(2));
+    }
 
     public Mob buildMob(int level, boolean isBoss) {
         Tier tier;

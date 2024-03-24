@@ -2,6 +2,7 @@ package org.mslowko.mobbuilder.api;
 
 import lombok.RequiredArgsConstructor;
 import org.mslowko.mobbuilder.dto.MobDTO;
+import org.mslowko.mobbuilder.dto.response.StatusResponse;
 import org.mslowko.mobbuilder.model.Mob;
 import org.mslowko.mobbuilder.service.MobService;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,11 @@ import org.springframework.web.bind.annotation.*;
 @RequiredArgsConstructor
 public class MobController {
     private final MobService mobService;
+
+    @GetMapping("/status")
+    public ResponseEntity<StatusResponse> getStatus() {
+        return ResponseEntity.ok(mobService.getRepositoryStatus());
+    }
 
     @GetMapping("/fetch")
     public ResponseEntity<Mob> fetchBasicMob(@RequestParam("level") int level) {
