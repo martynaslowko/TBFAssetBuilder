@@ -17,10 +17,10 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
     @Getter(AccessLevel.PROTECTED)
-    @Value("${DB_NAME}")
+    @Value("${spring.data.mongodb.database}")
     protected String databaseName;
 
-    @Value("${MONGODB_URI}")
+    @Value("${spring.data.mongodb.uri}")
     protected String mongoURI;
 
     @Override
