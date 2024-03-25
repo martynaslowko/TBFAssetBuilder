@@ -11,8 +11,16 @@
             </DockerEnvVarImpl>
             <DockerEnvVarImpl>
               <option name="name" value="MONGODB_URI" />
-              <option name="value" value="mongodb://root:root@turnbasedfighterapi-mongodb_container-1:27017/" />
+              <option name="value" value="mongodb://root:root@192.168.0.200:27017/" />
             </DockerEnvVarImpl>
+          </list>
+        </option>
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="8081" />
+              <option name="hostPort" value="8081" />
+            </DockerPortBindingImpl>
           </list>
         </option>
         <option name="sourceFilePath" value="Dockerfile" />
