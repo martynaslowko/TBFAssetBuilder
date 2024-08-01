@@ -1,4 +1,4 @@
-package org.mslowko.mobbuilder.model;
+package org.mslowko.tbf.assetbuilder.model;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

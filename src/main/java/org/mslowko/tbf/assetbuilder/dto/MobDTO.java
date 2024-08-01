@@ -1,7 +1,7 @@
-package org.mslowko.mobbuilder.dto;
+package org.mslowko.tbf.assetbuilder.dto;
 
 import lombok.Data;
-import org.mslowko.mobbuilder.model.Tier;
+import org.mslowko.tbf.assetbuilder.model.Tier;
 
 @Data
 public class MobDTO {

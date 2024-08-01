@@ -1,7 +1,7 @@
 FROM openjdk:17-jdk-alpine
 
 WORKDIR /app
-COPY build/libs/MobBuilderAPI-*.jar MobBuilderAPI.jar
+COPY build/libs/TBFAssetBuilder-*.jar TBFAssetBuilder.jar
 COPY build/resources resources
 
-CMD ["java", "-jar", "MobBuilderAPI.jar"]
+CMD ["java", "-jar", "TBFAssetBuilder.jar"]

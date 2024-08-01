@@ -1,4 +1,4 @@
-package org.mslowko.mobbuilder;
+package org.mslowko.tbf.assetbuilder;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

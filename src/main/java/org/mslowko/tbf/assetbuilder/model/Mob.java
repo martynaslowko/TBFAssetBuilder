@@ -1,9 +1,9 @@
-package org.mslowko.mobbuilder.model;
+package org.mslowko.tbf.assetbuilder.model;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
-import org.mslowko.mobbuilder.dto.MobDTO;
+import org.mslowko.tbf.assetbuilder.dto.MobDTO;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 

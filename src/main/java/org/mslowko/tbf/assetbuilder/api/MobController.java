@@ -1,10 +1,10 @@
-package org.mslowko.mobbuilder.api;
+package org.mslowko.tbf.assetbuilder.api;
 
 import lombok.RequiredArgsConstructor;
-import org.mslowko.mobbuilder.dto.MobDTO;
-import org.mslowko.mobbuilder.dto.response.StatusResponse;
-import org.mslowko.mobbuilder.model.Mob;
-import org.mslowko.mobbuilder.service.MobService;
+import org.mslowko.tbf.assetbuilder.dto.MobDTO;
+import org.mslowko.tbf.assetbuilder.dto.response.StatusResponse;
+import org.mslowko.tbf.assetbuilder.model.Mob;
+import org.mslowko.tbf.assetbuilder.service.MobService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

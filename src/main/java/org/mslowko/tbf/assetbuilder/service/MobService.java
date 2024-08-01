@@ -1,14 +1,14 @@
-package org.mslowko.mobbuilder.service;
+package org.mslowko.tbf.assetbuilder.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.mslowko.mobbuilder.dto.MobDTO;
-import org.mslowko.mobbuilder.dto.Status;
-import org.mslowko.mobbuilder.dto.response.StatusResponse;
-import org.mslowko.mobbuilder.model.Mob;
-import org.mslowko.mobbuilder.model.MobRepository;
-import org.mslowko.mobbuilder.model.Tier;
-import org.mslowko.mobbuilder.model.exception.MobTierNotAvailableException;
+import org.mslowko.tbf.assetbuilder.dto.MobDTO;
+import org.mslowko.tbf.assetbuilder.dto.Status;
+import org.mslowko.tbf.assetbuilder.dto.response.StatusResponse;
+import org.mslowko.tbf.assetbuilder.model.Mob;
+import org.mslowko.tbf.assetbuilder.model.MobRepository;
+import org.mslowko.tbf.assetbuilder.model.Tier;
+import org.mslowko.tbf.assetbuilder.model.exception.MobTierNotAvailableException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

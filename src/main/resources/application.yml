@@ -5,4 +5,4 @@ spring:
   data:
     mongodb:
       uri: ${MONGODB_URI:mongodb://localhost:27017/}
-      database: ${DB_NAME:MobBuilder}
+      database: ${DB_NAME:TBFAssetBuilder}

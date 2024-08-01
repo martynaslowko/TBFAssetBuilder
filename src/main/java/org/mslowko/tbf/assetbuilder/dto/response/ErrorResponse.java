@@ -1,4 +1,4 @@
-package org.mslowko.mobbuilder.dto.response;
+package org.mslowko.tbf.assetbuilder.dto.response;
 
 import org.springframework.http.HttpStatus;
 

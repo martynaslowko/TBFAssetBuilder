@@ -1,4 +1,4 @@
-package org.mslowko.mobbuilder.config;
+package org.mslowko.tbf.assetbuilder.config;
 
 import com.mongodb.ConnectionString;
 import com.mongodb.MongoClientSettings;
@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.config.AbstractMongoClientConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
 @Configuration
-@EnableMongoRepositories(basePackages = "org.mslowko.mobbuilder.model")
+@EnableMongoRepositories(basePackages = "org.mslowko.tbf.assetbuilder.model")
 public class MongoConfig extends AbstractMongoClientConfiguration {
 
     @Getter(AccessLevel.PROTECTED)

@@ -1,8 +1,8 @@
-package org.mslowko.mobbuilder.api;
+package org.mslowko.tbf.assetbuilder.api;
 
 import lombok.extern.slf4j.Slf4j;
-import org.mslowko.mobbuilder.dto.response.ErrorResponse;
-import org.mslowko.mobbuilder.model.exception.MobTierNotAvailableException;
+import org.mslowko.tbf.assetbuilder.dto.response.ErrorResponse;
+import org.mslowko.tbf.assetbuilder.model.exception.MobTierNotAvailableException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -5,8 +5,8 @@
       <env name="DB_NAME" value="MobBuilder" />
       <env name="MONGODB_URI" value="mongodb://root:root@localhost:27017/" />
     </envs>
-    <module name="MobBuilderAPI.main" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="org.mslowko.mobbuilder.Main" />
+    <module name="TBFAssetBuilder.main" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="org.mslowko.tbf.assetbuilder.Main" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
