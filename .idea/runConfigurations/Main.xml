@@ -2,7 +2,6 @@
   <configuration default="false" name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
     <option name="ALTERNATIVE_JRE_PATH" value="19" />
     <envs>
-      <env name="DB_NAME" value="MobBuilder" />
       <env name="MONGODB_URI" value="mongodb://root:root@localhost:27017/" />
     </envs>
     <module name="TBFAssetBuilder.main" />
