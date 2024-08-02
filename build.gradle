@@ -6,17 +6,7 @@ plugins {
     id "io.spring.dependency-management" version "1.1.4"
 }
 
-jar {
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    manifest {
-        attributes 'Main-Class': 'org.mslowko.mobbuilder.Main'
-    }
-    from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-}
-
-group = 'org.mslowko.mobbuilder'
+group = 'org.mslowko.tbf.assetbuilder'
 version = '1.0-SNAPSHOT'
 
 repositories {

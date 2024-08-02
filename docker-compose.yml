@@ -1,14 +1,26 @@
+#dev only
+
 version: '3.8'
 services:
-  mongodb_container:
+  mongo:
     image: mongo:latest
+    hostname: mongo
     ports:
       - "27017:27017"
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - mongodb_data_container:/data/db
+      - mongodb_data_container:/tbf/db
+  app:
+    depends_on:
+      - mongo
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      MONGODB_URI: mongodb://mongo:27017/
+    volumes:
+      - tbfab_data_container:/tbf/app
 
 volumes:
   mongodb_data_container:
+  tbfab_data_container:
