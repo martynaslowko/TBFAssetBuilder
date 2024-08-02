@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface MobRepository extends MongoRepository<Mob, String> {
-    List<Mob> findMobsByTier(Tier tier);
+public interface ItemRepository extends MongoRepository<Item, String> {
+    List<Item> findItemsByTier(Tier tier);
     boolean existsByTier(Tier tier);
 }

@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.mslowko.tbf.assetbuilder.dto.MobDTO;
+import org.mslowko.tbf.assetbuilder.model.sub.Tier;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.MongoId;
 

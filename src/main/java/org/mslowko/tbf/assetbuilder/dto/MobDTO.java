@@ -1,7 +1,7 @@
 package org.mslowko.tbf.assetbuilder.dto;
 
 import lombok.Data;
-import org.mslowko.tbf.assetbuilder.model.Tier;
+import org.mslowko.tbf.assetbuilder.model.sub.Tier;
 
 @Data
 public class MobDTO {
